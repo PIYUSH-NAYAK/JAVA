@@ -12,7 +12,7 @@ public class ques {
         int size=s.nextInt();
         int []arr = new int[size];
         
-        // arrInput(size);
+       
         for(int i=0;i<size;i++)
         {
             
@@ -20,13 +20,22 @@ public class ques {
             arr[i]=s.nextInt();
         }
 
-        System.out.print("Your array: " );
+        System.out.println("enter the element value whose index you want to know in array: ");
+        int p = s.nextInt();
 
-        for(int i=0;i<size;i++)
+        for(int i=0;i<arr.length;i++)
         {
-            System.out.print(arr[i] + " ");
-            
+            if(arr[i]==p)
+            System.out.println("element find at index: " + i);
         }
+
+        // System.out.print("Your array: " );
+
+        // for(int i=0;i<size;i++)
+        // {
+        //     System.out.print(arr[i] + " ");
+            
+        // }
 
 
 
